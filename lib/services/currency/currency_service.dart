@@ -6,6 +6,7 @@ import 'package:moolax/business_logic/models/rate.dart';
 // for separating architectural layers. It also makes testing and development
 // easier because you can provide a mock implementation or fake data.
 abstract class CurrencyService {
+
   Future<List<Rate>> getAllExchangeRates({String base});
 
   Future<List<Currency>> getFavoriteCurrencies();
